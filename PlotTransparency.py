@@ -102,12 +102,12 @@ for i in range(len(FileIN)):
                          numpy.array(TransArray[i][0]),
                          numpy.array(TransArray[i][1]))
 
-    gTrans.SetTitle('Transparency of Li-loaded WbLS')
+    gTrans.SetTitle('')
     gTrans.GetXaxis().SetTitle('Wavelength [nm]')
     gTrans.GetXaxis().SetTitleFont(132)
     gTrans.GetXaxis().SetLabelFont(132)
     gTrans.GetXaxis().SetLimits(MinWave, MaxWave)
-    gTrans.GetYaxis().SetTitle('Relative Transparency [%]')
+    gTrans.GetYaxis().SetTitle('Transparency [%]')
     gTrans.GetYaxis().SetTitleFont(132)
     gTrans.GetYaxis().SetTitleOffset(1.2)
     gTrans.GetYaxis().SetLabelFont(132)

@@ -10,5 +10,5 @@ Analysis tools for transparency measurement at Fukui University
 2, AnalysisTransparency.py
    - to get value of transparency at specific wavelength
    - input data can be read with option -i
-   - input data should be only one (multiple data not suitable)
+   - multiple input data can be read such as '-i (data1) (data2) ...'
    - use with option -wl (wavelength)

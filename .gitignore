@@ -1,4 +1,5 @@
-
 *.TXT
 *.gif
 *.pdf
+*~
+*.dat

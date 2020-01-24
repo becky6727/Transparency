@@ -15,7 +15,7 @@ Parser.add_argument('-i',
 
 Parser.add_argument('-wl',
                     dest = 'WL',
-                    default = '420.0',
+                    default = '450.0',
                     type = float,
                     help = 'Wavelength where you want to get the value of transparency')
 
@@ -84,4 +84,10 @@ for i in range(len(FileIN)):
                                                                    numpy.interp(WL, TransArray[i][0], TransArray[i][1]),
                                                                    WL)
 
+    #calc attenuation length
+    T = (numpy.interp(WL, TransArray[i][0], TransArray[i][1]))/100.0
+    Lambda = -90.0/numpy.log(T)
+    
+    print '%s: Att. length = %2.2f mm at wavelength = %3.2f nm' %(FileIN[i], Lambda, WL)
+    
     pass

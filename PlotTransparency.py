@@ -89,7 +89,7 @@ c1.SetFillColor(0)
 c1.SetGridx()
 c1.SetGridy()
 
-MinWave = 300.0 #nm
+MinWave = 350.0 #nm
 MaxWave = 600.0
 MinTrans = 0.0 #%, relative transparency
 MaxTrans = 100.0
